@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-        val diceImage: ImageView = findViewById(R.id.dice__image)
-
+        lateinit var diceImage: ImageView
+        diceImage = findViewById(R.id.dice__image)
         //Shows the correct image
         diceImage.setImageResource(drawableResource)
 
